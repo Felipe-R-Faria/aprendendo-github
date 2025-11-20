@@ -1,0 +1,45 @@
+*{
+    margin:0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+section{
+    font-size: 25px;
+    background-color: rgb(157, 224, 250);
+    text-align: center;
+}
+
+#Principal{
+    border: 1px solid;
+}
+
+#Principal #nav_bar{
+    border: 1px solid;
+}
+
+#Principal #nav_bar ul{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+#Principal #nav_bar ul a{
+    text-decoration: none;
+}
+
+#Box_1{
+    border: 1px solid;
+    height: 35vh;
+}
+
+#Box_1 #caixa_txt{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+
+}
