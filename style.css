@@ -4,10 +4,52 @@
     box-sizing: border-box;
 }
 
+
+:root {
+
+  /* ============================
+     🎯 CORES PRIMÁRIAS
+     Botões, CTAs, ações importantes
+  ============================ */   
+  --primaria: #34D399;        /* botão principal */
+  --primaria-hover: #10B981;  /* hover */
+  --primaria-ativa: #059669;  /* ativo / foco forte */
+
+  /* ============================
+     📝 CORES SECUNDÁRIAS
+     Textos, títulos, descrições
+  ============================ */
+  --texto-titulo: #1E293B;    /* quase preto com nuance azul */
+  --texto-corpo: #475569;     /* corpo / parágrafos */
+  --texto-fraco: #94A3B8;     /* placeholder / descrição fraca */
+
+  /* ============================
+     🎛️ CORES TERCIÁRIAS
+     Fundos, cards, caixas, decorativos
+  ============================ */
+  --fundo-geral: #ECFDF5;     /* fundo geral bem clarinho */
+  --fundo-card: #D1FAE5;      /* cards */
+  --fundo-decorativo: #A7F3D0; /* detalhes / faixas */
+
+  /* ============================
+     EXTRAS
+  ============================ */
+  --branco: #FFFFFF;
+  --preto: #000000;
+}
+
+
+
+body{
+    background-color:var(--fundo-geral);
+}
+
 section{
-    font-size: 25px;
-    background-color: rgb(157, 224, 250);
+    font-size: 22px;
+    background-color: var(--primaria);
     text-align: center;
+    color: white;
+    font-family: "Rubik", sans-serif;
 }
 
 #Principal{
@@ -31,15 +73,87 @@ section{
 }
 
 #Box_1{
-    border: 1px solid;
+    border: 0px solid;
     height: 35vh;
-}
-
-#Box_1 #caixa_txt{
-    border: 1px solid;
     display: flex;
     justify-content: center;
-    width: 50%;
-    
+    align-items: center;
+}
 
+#caixa_txt{
+    border: 1px solid;
+    width: 70%;
+    height: 40%;
+    background-color: var(--fundo-card);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    font-family:"Rubik", sans-serif;
+}
+
+#caixa_txt p{
+    text-align: center;
+    margin-top: 25px;
+    color: var(--texto-corpo);
+}
+
+#Box_2{
+    border: 1px solid;
+    height: 43vh;
+}
+
+.conteiners{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.conteiners img{
+    width: 14pc;
+}
+
+.conteiners div{
+    border: 1px solid;
+    width: 220px;
+    height: 120px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons #esquerda{
+    width: 43px;
+    transform: rotate(180deg);
+    
+}
+
+.buttons #direita{
+    width: 43px;
+    right: 0%;
+}
+
+.bolinhas_nav{
+    border: 0px solid;
+    width: 150px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(213%);
+    border-radius: 25px;
+    background-color: var(--fundo-card);
+}
+
+.bolinhas_nav div{
+    border: 0px solid;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--primaria-ativa);
+    
 }
